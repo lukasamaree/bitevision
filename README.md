@@ -16,7 +16,8 @@ BiteVision is a recipe recommendation system that helps you discover recipes by 
 
 </details>
 ## Features
-Upload an image of a dish and get the top 10 most visually similar recipeshttps://github.com/lukasamaree/bitevision/blob/master/README.md
+
+Upload an image of a dish and get the top 10 most visually similar recipes
 
 Powered by CLIP embeddings and MongoDB’s Approximate Nearest Neighbors (ANN) search
 
