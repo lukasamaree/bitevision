@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-  const body = req.body;
   const backendUrl = process.env.DEPLOYED_URL || "http://localhost:8000";
 
   const backendRes = await fetch(`${backendUrl}/api/match`, {
@@ -9,7 +8,8 @@ export async function POST(req: NextRequest) {
     headers: {
       "content-type": req.headers.get("content-type") || "",
     },
-    body: JSON.stringify(body),
+    body: req.body,
+    duplex: "half",
   });
 
   const contentType = backendRes.headers.get("content-type");
