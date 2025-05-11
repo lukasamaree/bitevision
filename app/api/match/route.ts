@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
     },
     body: req.body,
     duplex: "half",
-  });
+  } as any);
 
   const contentType = backendRes.headers.get("content-type");
   const text = await backendRes.text();
