@@ -10,7 +10,6 @@ export async function POST(req: NextRequest) {
       "content-type": req.headers.get("content-type") || "",
     },
     body,
-    duplex: "half",
   });
 
   const contentType = backendRes.headers.get("content-type");

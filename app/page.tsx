@@ -9,7 +9,7 @@ import { FileDropzone } from "@/components/ui/FileDropzone"
 import { RecipeCard } from "@/components/ui/RecipeCard"
 import { Glow } from "@/components/ui/glow"
 import { Loader2 } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
+
 
 
 export default function Home() {
