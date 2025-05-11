@@ -15,6 +15,7 @@ BiteVision is a recipe recommendation system that helps you discover recipes by 
 - [License](#license)
 
 </details>
+
 ## Features
 
 Upload an image of a dish and get the top 10 most visually similar recipes
