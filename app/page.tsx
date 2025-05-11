@@ -11,58 +11,6 @@ import { Glow } from "@/components/ui/glow"
 import { Loader2 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
-export function AnimatedBiteTitle() {
-  const [hovered, setHovered] = useState(false)
-
-  // Bite marks: array of {cx, cy, r}
-  const bites = [
-    { cx: 40, cy: 60, r: 18 },
-    { cx: 120, cy: 70, r: 14 },
-    { cx: 200, cy: 65, r: 12 },
-  ]
-
-  return (
-    <div
-      className="relative inline-block select-none"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      style={{ lineHeight: 1.1 }}
-    >
-      <span className="relative z-10 font-bold text-4xl md:text-5xl text-center block">
-        BiteVision
-      </span>
-      {/* SVG overlay for animated bites */}
-      <svg
-        className="absolute left-0 top-0 w-full h-full pointer-events-none"
-        viewBox="0 0 260 80"
-        style={{ zIndex: 20 }}
-      >
-        <AnimatePresence>
-          {hovered &&
-            bites.map((bite, i) => (
-              <motion.circle
-                key={i}
-                initial={{ r: 0, opacity: 0 }}
-                animate={{ r: bite.r, opacity: 1 }}
-                exit={{ r: 0, opacity: 0 }}
-                transition={{ duration: 0.3, delay: i * 0.08, type: "spring" }}
-                cx={bite.cx}
-                cy={bite.cy}
-                fill="#fff"
-                stroke="#fff"
-                strokeWidth={2}
-                style={{
-                  filter:
-                    "drop-shadow(0 2px 4px rgba(0,0,0,0.10)) drop-shadow(0 0px 0px #fff)",
-                  mixBlendMode: "destination-out",
-                }}
-              />
-            ))}
-        </AnimatePresence>
-      </svg>
-    </div>
-  )
-}
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
