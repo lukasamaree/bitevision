@@ -14,9 +14,10 @@ Tag-based filtering (e.g., vegetarian, quick meals)
 
 Hybrid image + text search for more accurate results
 
-# Link To Webapp: https://bitevision.vercel.app/
+# Link To Deployed App: https://bitevision.vercel.app/
 
-If you want to explore making this on your own with your own frontend ...
+
+If you want to explore making this on your own with your own frontend [Link text](#BiteVision Frontend)
 
 # BiteVision Frontend
 
