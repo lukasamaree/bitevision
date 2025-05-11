@@ -1,3 +1,23 @@
+# BiteVision
+BiteVision  is a recipe recommendation system that helps you discover recipes by simply uploading a photo of your food. It combines computer vision and vector search to retrieve visually and semantically similar recipes from a database of 69,000+.
+
+## Features
+Upload an image of a dish and get the top 10 most visually similar recipes
+
+Powered by CLIP embeddings and MongoDB’s Approximate Nearest Neighbors (ANN) search
+
+Fast and scalable — recommendations in under one second
+
+Streamlit-based interface with support for:
+
+Tag-based filtering (e.g., vegetarian, quick meals)
+
+Hybrid image + text search for more accurate results
+
+# Link To Webapp: https://bitevision.vercel.app/
+
+If you want to explore making this on your own with your own frontend ...
+
 # BiteVision Frontend
 
 This is the frontend for the BiteVision project, built with Next.js, React, Tailwind CSS, and shadcn/ui. It allows users to upload a food image and/or enter a food description to find similar recipes using a deep learning backend.
