@@ -55,12 +55,12 @@ export function CTASection({
         {/* Action Button */}
         <Button
           variant={
-            ["default", "link", "destructive", "outline", "secondary", "ghost"].includes(action.variant)
-              ? action.variant
+            ["default", "link", "destructive", "outline", "secondary", "ghost"].includes(action.variant ?? "")
+              ? (action.variant as "default" | "link" | "destructive" | "outline" | "secondary" | "ghost")
               : "default"
           }
           size="lg"
-          className="opacity-0 animate-fade-in-up delay-500"
+          className={`opacity-0 animate-fade-in-up delay-500 ${action.variant === "glow" ? "your-glow-class" : ""}`}
           asChild
         >
           <a href={action.href}>{action.text}</a>
