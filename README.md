@@ -17,7 +17,7 @@ Hybrid image + text search for more accurate results
 # Link To Deployed App: https://bitevision.vercel.app/
 
 
-If you want to explore making this on your own with your own frontend [Link text](#BiteVision Frontend)
+If you want to explore making this on your own with your own frontend [Link text](# BiteVision Frontend)
 
 # BiteVision Frontend
 
