@@ -131,7 +131,7 @@ export default function Home() {
             <Button
               onClick={handleSubmit}
               disabled={(!file && !description) || loading}
-              className="w-full mt-8 flex items-center justify-center gap-2"
+              className={`w-full mt-8 flex items-center justify-center gap-2 ${loading ? "animate-spin" : ""} ${error ? "bg-red-500" : "bg-orange-600"}`}
               type="submit"
             >
               {loading && <Loader2 className="animate-spin w-4 h-4" />}

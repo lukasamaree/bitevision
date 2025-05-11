@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
     headers: {
       "content-type": req.headers.get("content-type") || "",
     },
-    body,
+    body: JSON.stringify(body),
   });
 
   const contentType = backendRes.headers.get("content-type");
