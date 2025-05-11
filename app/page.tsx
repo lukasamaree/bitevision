@@ -10,8 +10,6 @@ import { RecipeCard } from "@/components/ui/RecipeCard"
 import { Glow } from "@/components/ui/glow"
 import { Loader2 } from "lucide-react"
 
-
-
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
   const [file, setFile] = useState<File | null>(null)
@@ -131,7 +129,7 @@ export default function Home() {
             <Button
               onClick={handleSubmit}
               disabled={(!file && !description) || loading}
-              className={`w-full mt-8 flex items-center justify-center gap-2 ${loading ? "animate-spin" : ""} ${error ? "bg-red-500" : "bg-orange-600"}`}
+              className="w-full mt-8 flex items-center justify-center gap-2"
               type="submit"
             >
               {loading && <Loader2 className="animate-spin w-4 h-4" />}
